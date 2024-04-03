@@ -1,0 +1,49 @@
+@media (max-width: 800px){
+      
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div{
+        padding-right: 3rem;
+    }
+     
+
+    .list{
+        display: none;
+        flex-direction: column;
+     
+    
+    }
+
+    header li{
+        padding: 3.5rem  0;
+    }
+    
+    .sec1{
+        margin-top: 18rem ;
+    }
+
+    .menu-label::after {
+        content: "𝄘";
+        position: fixed;
+        top: 0.8rem;
+        right: 0.8rem;
+        color: aliceblue;
+        background-color: rgba(93, 42, 212, 0.5);
+        font-size: 4rem;
+        z-index: 10000; 
+        border-radius: 0.9rem;
+        padding: 0 0.5rem;  
+        cursor: pointer;
+    }
+
+    .menu-label:checked~.list{
+        display: block;
+    }
+   
+
+
+}

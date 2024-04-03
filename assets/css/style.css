@@ -1,0 +1,276 @@
+
+:root{
+
+    --laranja:rgb(216, 152, 79);
+    --transpatente:rgba(55, 17, 143, 0.377);
+    --branco: rgb(209, 188, 243) ;
+    --amarelo: rgb(201, 193, 78) ;
+    --vinho:rgb(117, 13, 13);
+    --preto:rgb(0, 0, 0);
+
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(65, 1, 1, 0.123);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.0rem;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.589);
+   
+}
+
+header a{
+
+    color: var(--laranja);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.9rem;
+
+   
+}
+
+.list{
+
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 4rem;
+    list-style: none;
+
+
+}
+
+header div{
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.5rem;
+    transition: all 5s ease;
+    cursor: pointer;
+   
+   
+}
+
+
+h1{
+    
+   font-size: 4rem;
+   font-family: "Brygada 1918", serif;
+   color: var(--amarelo);
+   text-shadow: 0 0 15px rgb(0, 0, 0);
+   padding: 2.0rem;
+}
+
+
+main, footer  {
+    padding: 4rem;
+    font-size: 4rem;
+   
+}
+
+
+nav{
+    position: relative;
+}
+
+header li a{
+
+   
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+header nav li a:hover{
+    color: var(--branco);
+}
+
+main{
+    font-family: "Roboto Condensed", sans-serif;
+   
+}
+
+.sec1, .sec2 {
+
+    margin-top: 18rem;
+    display: flex;
+    flex-direction: row;
+    border: solid 2px var(--preto);
+    border-radius: 16px;
+    background-color: var(--vinho);
+    padding: 1.5rem;
+    gap: 25px;
+    color: var(--branco);
+
+}
+
+section img{
+    max-width: 600px;
+}
+
+.sec3{
+    margin-top: 8.0rem;
+    text-align: center;
+    color: var(--branco);
+}
+
+@keyframes preço {
+    0%{color: aliceblue;}
+    50%{color: rgb(255, 196, 0);}
+    100%{color: aliceblue;}
+}
+
+.sec3 span{
+    animation-name: preço;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.sec3 span{
+    font-size: 50px;
+}
+
+.sec3 p{
+    color: var(--branco);
+}
+
+
+dt{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+dd{
+    font-family: "Montserrat", sans-serif;
+}
+
+.sec2 li{
+    transition: all .2s ease-in-out;
+}
+
+.sec2 li:hover{
+    color: var(--amarelo);
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 350;
+}
+
+button{
+    margin-top: 15px;
+    background-color: darkgreen;
+    color: aliceblue;
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: green;
+    color: black;
+    transform: scale(1.1);
+}
+
+footer img{
+    max-width: 40px;
+    transition: all .3s ease-in-out;
+    margin-left: -150px;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+footer li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+   
+    box-shadow: 0 -5px 10px rgb(0, 0, 0);
+    
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a{
+    color: var(--branco);
+    font-size: 20px;
+    padding-top: 20px;
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover{
+    color: var(--amarelo);
+}
+
+.form{
+   margin-top: 11rem ;
+   margin-left: 25%;
+   
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    background-color: var(--transpatente);
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+   
+}
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="submit"]{
+
+    background-color: var(--transpatente);
+    margin: 2.0rem 6rem;
+    border: solid black 1px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+input[type="submit"]{
+    background-color: blueviolet;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+input[type="submit"]:focus{
+    background-color: aliceblue;
+}
+input[type="submit"]:hover{
+ 
+    background-color: rgb(146, 77, 211);
+
+}
+
+input:focus{
+    background-color: rgb(92, 35, 92);
+   
+}
+
+
+
+
